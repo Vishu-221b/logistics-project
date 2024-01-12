@@ -304,11 +304,33 @@ body {
   gap: 30px;
 }
 
-.logo {
+/* .logo {
   font-family: var(--ff-oswald);
   color: var(--white);
   font-size: 3rem;
+  
+} */
+
+h1 {
+  text-align: center; /* Center the logo horizontally */
 }
+
+.logo {
+  display: inline-block; /* Ensure the anchor behaves like a block element */
+}
+
+.logo img {
+  width: 150px; /* Set the desired width for your logo */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra space around the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Optional: Add styles for the link text */
+.logo:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
 
 .nav-open-btn {
   color: var(--white);
@@ -657,6 +679,95 @@ margin-right: 5px;
 .styled-table tbody tr.active-row {
   font-weight: bold;
   color: var(--dark-orange); /* Use the project's text color */
+}
+
+/*Testimonial*/
+
+/* .testimonial-flex{
+  display:flex;
+  align-items: center;
+} */
+
+.testimonial-container {
+  background-color: #476ce4;
+  color: #fff;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 50px 80px;
+  max-width: 768px;
+  position: relative;
+}
+
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  position: absolute;
+  top: 70px;
+}
+
+.fa-quote-right {
+  left: 40px;
+}
+
+.fa-quote-left {
+  right: 40px;
+}
+
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+}
+
+.user .username {
+  margin: 0;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 8px 0;
+}
+
+.progress-bar {
+  background-color: #fff;
+  height: 6px;
+  border-radius: 50%;
+  width: 100%;
+  margin: 15px;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+
+@media(max-width: 768px) {
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+  .fa-quote {
+    visibility: hidden;
+  }
 }
 
 
