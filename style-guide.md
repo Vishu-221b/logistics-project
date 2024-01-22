@@ -31,7 +31,7 @@ Ionicon
 --alice-blue: hsl(203, 100%, 97%);
 --light-gray: hsl(0, 0%, 80%);
 --indigo-dye: hsl(202, 64%, 26%);
---cultured-1: hsl(0, 0%, 94%);
+--cultured-1: hsl(0, 0%, 100%);
 --cultured-2: hsl(0, 0%, 95%);
 --cultured-3: hsl(0, 0%, 95%);
 --plutinum: hsl(0, 0%, 91%);

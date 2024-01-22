@@ -91,6 +91,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+    font-weight: 300;
 }
 
 li { list-style: none; }
@@ -304,16 +306,15 @@ body {
   gap: 30px;
 }
 
-/* .logo {
-  font-family: var(--ff-oswald);
-  color: var(--white);
-  font-size: 3rem;
-  
-} */
-
-h1 {
-  text-align: center; /* Center the logo horizontally */
+.header .container a.logo {
+  width: 30%; /* Set the width for the <a> element */
 }
+
+.header .container nav {
+  width: 70%; /* Set the width for the <nav> element */
+}
+
+
 
 .logo {
   display: inline-block; /* Ensure the anchor behaves like a block element */
@@ -351,13 +352,33 @@ h1 {
   z-index: 3;
   visibility: hidden;
   transition: 0.25s var(--cubic-in);
+  
 }
+
+.navbar-2{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
 
 .navbar.active {
   visibility: visible;
   transform: translateX(300px);
   transition: 0.5s var(--cubic-out);
+  
 }
+
+
+
+
+.navbar.active .header-contact .contact-numbers a {
+  color: #1e1e1e; /* Change to your desired color */
+  margin-top: 30px;
+}
+
+
 
 .navbar-top {
   display: flex;
@@ -413,9 +434,14 @@ h1 {
 
 .call-icon {
 font-size: 24px;
-margin-top: 5px;
+
 margin-right: 5px;
 }
+
+
+
+/* Additional styles as needed for your design */
+
 
 /* Above changes are made later */
 
@@ -434,6 +460,33 @@ margin-right: 5px;
   opacity: 1;
 }
 
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: var(--green-blue-crayola); /* Background color of the button */
+  border: 1px solid #ddd; /* Border of the button */
+  transition: background-color 0.3s ease; /* Transition effect for the hover */
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd; /* Background color when hovered */
+}
+
+.navbar-item:hover .dropdown-menu {
+  display: block;
+}
+
 
 
 
@@ -441,6 +494,17 @@ margin-right: 5px;
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)); /* Adjust the gradient and opacity as needed */
+  z-index: -1;
+}
 
 .hero {
   position: relative;
@@ -689,8 +753,8 @@ margin-right: 5px;
 } */
 
 .testimonial-container {
-  background-color: #476ce4;
-  color: #fff;
+  background-color:var(--dark-orange);
+  color: #040404;
   border-radius: 15px;
   margin: 20px auto;
   padding: 50px 80px;
@@ -895,13 +959,13 @@ margin-right: 5px;
   #NEWSLETTER
 \*-----------------------------------*/
 
-.newsletter { background-color: var(--dark-orange); }
+.address {
+   background-color: var(--dark-orange); 
+   padding:100px;
+   
+  }
 
-.newsletter .img-holder {
-  background-color: transparent;
-  margin-block-end: 20px;
-  max-width: max-content;
-}
+
 
 .newsletter .section-title { margin-block-end: 20px; }
 
@@ -925,6 +989,41 @@ margin-right: 5px;
   font-weight: var(--fw-700);
   padding: 8px 20px;
 }
+
+
+
+.address-card {
+  background-color: var(--dark-orange);
+  padding: 30px;
+  border: 20px solid var(--cultured-3);
+  transition: var(--transition);
+
+}
+
+
+.address-title{
+  display: inline-block;
+  color: var(--white);
+  font-size: var(--fs-3);
+  margin-inline-end: 15px;
+}
+.address-text{
+  color: var(--white);
+  margin-top: 10px; 
+}
+
+.business-icon,
+.phone-icon,
+.location-icon{
+color:white;
+width:50px;
+height:100px;
+}
+
+
+
+
+
 
 
 
@@ -990,6 +1089,9 @@ margin-right: 5px;
 
 
 
+
+
+
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
@@ -1021,12 +1123,50 @@ margin-right: 5px;
 /*-----------------------------------*\
   #MEDIA QUERISE
 \*-----------------------------------*/
+@media (max-width: 540px) {
+
+  html, body {
+    margin: 0;
+    padding: 0;
+   
+    background-color: #ffffff; /* Adjust as needed */
+  }
+
+  
+
+  .hero {
+    /* Adjust hero styles for smaller screens */
+    /* For example, you might want to adjust the font size, padding, or layout */
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .hero-content{
+  width:80vw;
+  margin-left: 22px;
+  }
+  .hero-title .span {
+    
+    font-size: var(--fs-3);
+  }
+
+
+  .address {
+
+    padding:50px 0px 50px 0px;
+    
+   }
+
+
+  
+  
+}
 
 /**
  * responsive for larger than 540px screen
  */
 
-@media (min-width: 540px) {
+ @media (min-width: 540px) {
 
   /**
    * REUSED STYLE
@@ -1087,7 +1227,6 @@ margin-right: 5px;
   .about .abs-img-1 { right: -200px; }
 
 }
-
 
 
 
@@ -1489,3 +1628,115 @@ margin-right: 5px;
   .footer-top { padding-block: 60px; }
 
 }
+
+
+/*contact form*/
+
+
+form{
+  width: 100%;
+  position: relative;
+  margin: 30px auto 0 auto;
+}
+.row{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-gap: 20px 30px;
+  margin-bottom: 20px;
+}
+label{
+  color: #1c093c;
+  font-size: 14px;
+}
+textarea,
+input{
+  width: 100%;
+  font-weight: 400;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1.2px solid #c4cae0;
+  margin-top: 5px;
+}
+textarea{
+  resize: none;
+}
+textarea:focus,
+input:focus{
+  outline: none;
+  border-color: #6f6df4;
+}
+
+
+.form-container{
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 420px;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 20px 30px 25px 30px rgba(0.15,0.15,0.15,0.15);
+
+}
+
+
+.form-container h1{
+  font-size: 30px;
+  text-align: center;
+  color: #1c093c;
+}
+
+.form-container p{
+  position: relative;
+  width: 500px;
+  text-align: center;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 10px;;
+}
+
+
+
+.contact-form .container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+
+
+}
+
+
+
+#loadingMessage {
+  display: none;
+}
+
+.message {
+  font-size: 18x; /* Make the text larger */
+  font-weight: 300; /* Make the text bold */
+  margin-top: 10px; /* Add some space above the message */
+}
+
+.loading {
+  color: rgb(255, 89, 0); /* Make the loading message blue */
+}
+
+.success {
+  color: green; /* Make the success message green */
+}
+
+.error {
+  color: red; /* Make the error message red */
+}
+
+
+
+
+
+
+
+
+
+

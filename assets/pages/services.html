@@ -35,7 +35,7 @@
     <div class="container">
 
       <h1>
-        <a href="#" class="logo">3rpackersmovers</a>
+        <a href="./index.html" class="logo"><img src="../images/logo.png"></a>
       </h1>
 
       <nav class="navbar" data-navbar>
@@ -67,11 +67,20 @@
           </li>
 
           <li class="navbar-item">
-            <a href="./services.html" class="navbar-link" data-nav-link>
+            <a href="./assets/pages/services.html" class="navbar-link" data-nav-link>
               <span>Services</span>
-
-              <ion-icon name="chevron-forward"></ion-icon>
+              <span class="dropdown-icon">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </span>
             </a>
+            <div class="dropdown-menu">
+              <a href="./services/house Shifting.html">House Shifting</a>
+              <a href="./services/Office.html">Office Relocation</a>
+              <a href="./services/car.html">Car Transportation</a>
+              <a href="./services/bike.html">Bike Transportation</a>
+              <a href="./services/loading.html">Loading & Unloading</a>
+              <a href="./services/pet.html">Pet Relocation</a>
+            </div>
           </li>
 
           <li class="navbar-item">
@@ -162,7 +171,7 @@
       -->
 
       <section class="section hero" aria-label="home" id="home"
-        style="background-image: url('../images/hero-banner.jpg')">
+        style="background-image: url('../images/hero-banner2.jpeg')">
         <div class="container">
 
           <div class="hero-content">
@@ -359,8 +368,56 @@
   </main>
 
 
+  - #contact form
+-->
+<div class="contact-form">
+  <div class="container"> 
+    <div class="form-container">
+      <h1>Get a Free Quote</h1>
+      <p>Have any questions or suggestions? Drop us a message</p>
+      <form id="myForm" action="https://formsubmit.co/hellovishu221b@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="row">
+          <div class="column">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name here" required>
+          </div>
+          <div class="column">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email here" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="from_location">From Location</label>
+            <input type="text" id="from_location" name="from_location" placeholder="Your subject here" required>
+          </div>
+          <div class="column">
+            <label for="to_location">To Location</label>
+            <input type="text" id="to_location" name="to_location" placeholder="Your subject here" required>
+          </div>
+          <div class="column">
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" placeholder="Your phone number here" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="issue">Describe your issue(optional)</label>
+            <textarea id="issue" name="issue" placeholder="Describe your issue in detail here" rows="3"></textarea>
+          </div>
+        </div>
+        <div id="loadingMessage" class="message loading">Sending...</div>
+        <div id="formMessage" class="message"></div>
+        <button class="btn">Submit</button>
+      </form>
+  </div>
+</div>
+</div>
+ 
 
-   <!-- 
+
+<!-- 
     - #FOOTER
   -->
 
@@ -371,35 +428,38 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">Transportio</a>
+          <a href="./index.html" class="logo"><img src="../images/logo.png" alt="logo"></a>
 
           <p class="footer-text">
-            Many desktop publishing packages and web page editors now use are dolra Ipsum as their default.
+            Bhopal Branch- Address: 46 Rishikesh Vihar, Near SBI Branch, Bagmugaliya, Bhopal, Madhya Pradesh 462043
+          </p>
+          <p class="footer-text">
+            Branches: Bhopal, Indore, Satna , Raipur, Varanasi, Sonbhadra
           </p>
 
           <ul class="social-list">
 
             <li>
-              <a href="#" class="social-link">
+              <a href="mailto:info@3rpackersmovers.com" class="social-link">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/3rpackers/" class="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
+              <a href="https://www.instagram.com/3rpackersmovers/" class="social-link">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
+              <a href="tel:+919584555666" class="social-link">
+                <ion-icon name="call-outline"></ion-icon>
               </a>
             </li>
 
@@ -414,23 +474,23 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">About</a>
+            <a href="../assets/pages/about.html" class="footer-link">About</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Services</a>
+            <a href="../assets/pages/services.html" class="footer-link">Services</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Blog</a>
+            <a href="../assets/pages/pricing.html" class="footer-link">Pricing</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">FAQ</a>
+            <a href="../assets/pages/locations.html" class="footer-link">Locations</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contact Us</a>
+            <a href="../assets/pages/contact.html" class="footer-link">Contact Us</a>
           </li>
 
         </ul>
@@ -442,23 +502,23 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Warehouse</a>
+            <a href="#" class="footer-link">House/Office Shifting</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Air Freight</a>
+            <a href="#" class="footer-link">Car Transportation</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Ocean Freight</a>
+            <a href="#" class="footer-link">Bike Transportation</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Road Freight</a>
+            <a href="#" class="footer-link"> Loading Unloading</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Packaging</a>
+            <a href="#" class="footer-link"> Pet Relocation</a>
           </li>
 
         </ul>
@@ -470,23 +530,23 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Business Consulting</a>
+            <a href="" class="footer-link">Business Consulting</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Testimonials</a>
+            <a href="" class="footer-link">Testimonials</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Track Your Shipment</a>
+            <a href="" class="footer-link">Track Your Shipment</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="" class="footer-link">Privacy Policy</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Terms & Condition</a>
+            <a href="" class="footer-link">Terms & Condition</a>
           </li>
 
         </ul>
@@ -495,7 +555,7 @@
 
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; 2022 Transportio. All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+          &copy; 2024 3Packers&Movers. All Rights Reserved by <a href="#" class="copyright-link">vishucodes.live</a>
         </p>
       </div>
 

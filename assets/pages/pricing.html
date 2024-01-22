@@ -3,9 +3,438 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing</title>
+    <link rel ="stylesheet" href="../css/contact.css">
+    <title>Contact Us</title>
+    <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
 </head>
-<body>
-    Pricing
+<body id="top">
+
+
+
+     <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="./index.html" class="logo"><img src="../images/logo.png"></a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo"></a>
+
+          <button class="nav-close-btn" aria-label="Clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="../../index.html" class="navbar-link" data-nav-link>
+              <span>Home</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./about.html" class="navbar-link" data-nav-link>
+              <span>About</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./assets/pages/services.html" class="navbar-link" data-nav-link>
+              <span>Services</span>
+              <span class="dropdown-icon">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </span>
+            </a>
+            <div class="dropdown-menu">
+              <a href="./services/house Shifting.html">House Shifting</a>
+              <a href="./services/Office.html">Office Relocation</a>
+              <a href="./services/car.html">Car Transportation</a>
+              <a href="./services/bike.html">Bike Transportation</a>
+              <a href="./services/loading.html">Loading & Unloading</a>
+              <a href="./services/pet.html">Pet Relocation</a>
+            </div>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./locations.html" class="navbar-link" data-nav-link>
+              <span>Locations</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./pricing.html" class="navbar-link" data-nav-link>
+              <span>Pricing</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./blog.html" class="navbar-link" data-nav-link>
+              <span>Blog</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contact.html" class="navbar-link" data-nav-link>
+              <span>Contact</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-contact">
+
+        <div>
+
+          <div class="social-icons">
+
+            <a href="mailto:info@3rpackersmovers.com" style="color: rgb(153, 1, 1);" target="_blank">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+
+            <a href="https://www.facebook.com/3rpackers/" style="color: rgb(2, 108, 230);" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            
+            <a href="https://www.instagram.com/3rpackersmovers/" style="color: rgb(235, 30, 88);" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <!-- Add more links as needed -->
+          </div>
+
+          <div class="contact-numbers">
+            
+            <a href="tel:+919584555666" class="contact-number">
+              <ion-icon class="call-icon" name="call-outline"></ion-icon> 9584555666
+            </a>
+           <!--  <a href="tel:+918770833909" class="contact-number">
+              <ion-icon class="call-icon" name="call-outline"></ion-icon>8770833909
+            </a>
+            <a href="tel:+917000326481" class="contact-number">
+              <ion-icon class="call-icon" name="call-outline"></ion-icon>7000326481
+            </a> -->
+          </div>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <div class="section hero" aria-label="home" id="home"
+        style="background-image: url('../images/hero-banner.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title">
+              <span class="span">Pricing
+            </h2>
+
+            <p class="hero-text">
+              There are many variations of passages of worem Ipsum available, but the majority
+            </p>
+
+            <a href="#" class="btn-outline">View Services</a>
+
+            <img src="../images/hero-shape.png" width="116" height="116" loading="lazy"
+              class="hero-shape shape-1">
+
+            <img src="../images/hero-shape.png" width="116" height="116" loading="lazy"
+              class="hero-shape shape-2">
+
+          </div>
+
+      </div>
+
+
+      
+    </article>
+  </main>
+      
+
+  <!-- 
+        - #contact form
+      -->
+      <div class="contact-form">
+        <div class="container"> 
+          <div class="form-container">
+            <h1>Get a Free Quote</h1>
+            <p>Have any questions or suggestions? Drop us a message</p>
+            <form id="myForm" action="https://formsubmit.co/hellovishu221b@gmail.com" method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="row">
+                <div class="column">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name here" required>
+                </div>
+                <div class="column">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your email here" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <label for="from_location">From Location</label>
+                  <input type="text" id="from_location" name="from_location" placeholder="Your subject here" required>
+                </div>
+                <div class="column">
+                  <label for="to_location">To Location</label>
+                  <input type="text" id="to_location" name="to_location" placeholder="Your subject here" required>
+                </div>
+                <div class="column">
+                  <label for="contact">Contact Number</label>
+                  <input type="tel" id="contact" name="contact" placeholder="Your phone number here" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <label for="issue">Describe your issue(optional)</label>
+                  <textarea id="issue" name="issue" placeholder="Describe your issue in detail here" rows="3"></textarea>
+                </div>
+              </div>
+              <div id="loadingMessage" class="message loading">Sending...</div>
+              <div id="formMessage" class="message"></div>
+              <button class="btn">Submit</button>
+            </form>
+        </div>
+      </div>
+    </div>
+       
+
+
+
+
+       <!-- 
+    - #FOOTER
+  -->
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="./index.html" class="logo"><img src="../images/logo.png" alt="logo"></a>
+
+          <p class="footer-text">
+            Bhopal Branch- Address: 46 Rishikesh Vihar, Near SBI Branch, Bagmugaliya, Bhopal, Madhya Pradesh 462043
+          </p>
+          <p class="footer-text">
+            Branches: Bhopal, Indore, Satna , Raipur, Varanasi, Sonbhadra
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="mailto:info@3rpackersmovers.com" class="social-link">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/3rpackers/" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/3rpackersmovers/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+919584555666" class="social-link">
+                <ion-icon name="call-outline"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick Links</p>
+          </li>
+
+          <li>
+            <a href="../assets/pages/about.html" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="../assets/pages/services.html" class="footer-link">Services</a>
+          </li>
+
+          <li>
+            <a href="../assets/pages/pricing.html" class="footer-link">Pricing</a>
+          </li>
+
+          <li>
+            <a href="../assets/pages/locations.html" class="footer-link">Locations</a>
+          </li>
+
+          <li>
+            <a href="../assets/pages/contact.html" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">House/Office Shifting</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Car Transportation</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Bike Transportation</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"> Loading Unloading</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"> Pet Relocation</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Community</p>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Business Consulting</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Testimonials</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Track Your Shipment</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Terms & Condition</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 3Packers&Movers. All Rights Reserved by <a href="#" class="copyright-link">vishucodes.live</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+    
+
+<!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../js/script.js" defer></script>
+  <script src="../js/contactform.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../js/contactform.js"></script>
+
+   
 </body>
 </html>
